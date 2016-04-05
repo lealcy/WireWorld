@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>WireWorld</title>
+    <script src="WireWorld.js"></script>
+</head>
+<body onload="init()">
+    <canvas width="800" height="600" style="border: 1px solid red"></canvas>
+    <script>
+    function init() {
+        var canvas = document.querySelector("canvas");
+        ww = new WireWorld(canvas, 32, 16);
+        ww.render();
+        alert(`Mouse commands:
+            
+            Left Button: Put conductor/electron head/electron tail
+            Right Button: Delete component
+            Center button: Start/Stop simulation
+            Wheel Up: Clear all electrons
+            Wheel Down: Clear the board.`);
+    }
+    </script>
+</body>
+</html>
