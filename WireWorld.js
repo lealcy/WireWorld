@@ -16,8 +16,6 @@ class WireWorld {
         this.tHeight = canvas.height / height;
         this.state = this.createState(width, height, this.empty);
         this.stop = false;
-        this.startTime = null;
-        this.frameCount = 0;
         this.mouse = {
             isDown: false,
             moved: false,
@@ -32,8 +30,7 @@ class WireWorld {
         this.canvas.oncontextmenu = () => false; // disables the context menu
     }
     
-    render(timestamp) {
-        this.frameCount++;
+    render() {
         window.requestAnimationFrame.call(window, this.render.bind(this));
         if (!this.stop) {
                 this.updateState();
