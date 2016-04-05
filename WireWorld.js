@@ -1,5 +1,19 @@
 "use strict";
 
+/**
+ *  Copyright Notice:
+ * 
+ *  This code was first written by Lealcy Tardelli Belegante 
+ *  (lealcy@gmail.com) and can be found at https://github.com/lealcy/WireWorld. 
+ *  This code can be changed and reused freely but will not receive support by 
+ *  its creator(s).
+ * 
+ *  Changelog:
+ * 
+ *  2016/04/05 - Initial release (lealcy@gmail.com).
+ * 
+ */
+
 class WireWorld {
     constructor(canvas, width, height) {
         this.empty = 0;
